@@ -39,10 +39,11 @@ public class Empregado extends Pessoa {
     }
     ////////////////////////////////
     public void calcularSalario(double sal){
-        sal = getSalarioBase() - getImposto();
+        sal = getSalarioBase() - (getImposto() / 100);
     }
     ////////////////////////////////
-    public Empregado(String c, double s, double i){
+    public Empregado(String c, double s, double i, String n, String e, String t){
+        super (n,e,t);
         setCodigoSetor(c);
         setSalarioBase(s);
         setImposto(i);

@@ -34,7 +34,8 @@ public class Fornecedor extends Pessoa{
         System.out.println("Saldo = "+s);
     }
     //////////////////////////////////////
-    public Fornecedor(double vc, double vd){
+    public Fornecedor(double vc, double vd, String n, String e, String t){
+    super (n,e,t);
     setValorCredito(vc);
     setValorDivida(vd);
     }
