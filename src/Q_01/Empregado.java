@@ -11,10 +11,40 @@ package Q_01;
  */
 public class Empregado extends Pessoa {
     private String codigoSetor;
-    private String salarioBase;
+    private double salarioBase;
     private double imposto;
+    //////////////////////////////////
+    public String getCodigoSetor(){
+        return codigoSetor;
+    }
     
-    public void calcularSalario(){
-        
+    public double getSalarioBase(){
+        return salarioBase;
+    }
+    
+    public double getImposto(){
+        return imposto;
+    }
+    ////////////////////////////////
+    public void setCodigoSetor(String c){
+        this.codigoSetor = c;
+    }
+    
+    public void setSalarioBase(double s){
+        this.salarioBase = s;
+    }
+    
+    public void setImposto(double i){
+        this.imposto = i;
+    }
+    ////////////////////////////////
+    public void calcularSalario(double sal){
+        sal = getSalarioBase() - getImposto();
+    }
+    ////////////////////////////////
+    public Empregado(String c, double s, double i){
+        setCodigoSetor(c);
+        setSalarioBase(s);
+        setImposto(i);
     }
 }

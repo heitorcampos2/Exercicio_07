@@ -30,7 +30,7 @@ public class Fornecedor extends Pessoa{
     }
     //////////////////////////////////////
     public void obterSaldo(double s){
-        s = this.valorCredito - this.valorDivida;
+        s = getValorCredito() - getValorDivida();
         System.out.println("Saldo = "+s);
     }
     //////////////////////////////////////
