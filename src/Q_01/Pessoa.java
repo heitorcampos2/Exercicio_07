@@ -44,4 +44,10 @@ public class Pessoa {
         setTelefone(t);
     }
     //////////////////////////////////
+    public void mostrar (){
+    
+        System.out.println(getNome());
+        System.out.println(getEndereco());
+        System.out.println(getTelefone());
+    }    
 }

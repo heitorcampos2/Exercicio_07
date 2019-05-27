@@ -39,7 +39,8 @@ public class Empregado extends Pessoa {
     }
     ////////////////////////////////
     public void calcularSalario(double sal){
-        sal = getSalarioBase() - (getImposto() / 100);
+        sal = getSalarioBase() - (getSalarioBase() * getImposto());
+        System.out.print("Salário = "+sal);
     }
     ////////////////////////////////
     public Empregado(String c, double s, double i, String n, String e, String t){
