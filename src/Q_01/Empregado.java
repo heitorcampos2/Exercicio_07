@@ -38,7 +38,7 @@ public class Empregado extends Pessoa {
         this.imposto = i;
     }
     ////////////////////////////////
-    public void calcularSalario(double sal){
+    public double calcularSalario(double sal){
         sal = getSalarioBase() - (getSalarioBase() * getImposto());
         System.out.print("Salário = "+sal);
     }
