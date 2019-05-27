@@ -46,8 +46,8 @@ public class Pessoa {
     //////////////////////////////////
     public void mostrar (){
     
-        System.out.println(getNome());
-        System.out.println(getEndereco());
-        System.out.println(getTelefone());
+        System.out.println("Nome: "+getNome());
+        System.out.println("Endereço: "+getEndereco());
+        System.out.println("Telefone: "+getTelefone());
     }    
 }
